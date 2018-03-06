@@ -501,8 +501,7 @@ var startProfitSwitch = function(){
         pools: JSON.stringify(poolConfigs),
         portalConfig: JSON.stringify(portalConfig)
     });
-web_worker = worker;
-    worker.on('exit', function(code, signal){
+        worker.on('exit', function(code, signal){
         logger.error('Master', 'Profit', 'Profit switching process died, spawning replacement...');
         setTimeout(function(){
             startWebsite(portalConfig, poolConfigs);
