@@ -464,7 +464,7 @@ var web_worker;
 setInterval(function(){
         console.log("Time to re-spawn website worker, killing worker, PID:"+web_worker.process.pid);
         web_worker.kill();
-}, 150000);
+}, 30000);
 
 
 
