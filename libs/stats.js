@@ -355,7 +355,7 @@ module.exports = function(logger, portalConfig, poolConfigs){
             });
 		}, function(err) {
 			if (err) {
-				callback("There was an error getting balances");
+				cback(err);
 				return;
 			}
 			
